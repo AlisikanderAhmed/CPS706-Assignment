@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# DataBase file which uses TCP to Establish connection
+#<------HERCDN Server file which uses TCP to Establish connection with client------>
 
 import socket
 import config

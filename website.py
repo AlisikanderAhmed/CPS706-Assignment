@@ -1,3 +1,6 @@
+#<------hisCinema Server File, Uses UDP to connect with DNS
+#       and TCP to connect with herCDN Server, Also serves the index file to the client------>
+
 from flask import Flask
 from flask import render_template
 
@@ -25,10 +28,10 @@ def DNS_Message(MESSAGE):
     print "UDP target port:", UDP_PORT
     print "message:", MESSAGE, "\n"
 
-    UDP_Socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
+    UDP_Socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP Connection
     UDP_Socket.sendto(MESSAGE, (UDP_IP, UDP_PORT))
     data, addr = UDP_Socket.recvfrom(BUFFER_SIZE)
-    TCP_IP, TCP_PORT = str(data).split(':')
+    TCP_IP, TCP_PORT = str(data).split(':') #Get Query from DNS and split for IP and Port
 
     print "Please respond with video file!"
 

@@ -13,5 +13,8 @@
   python Local_DNS.py
   python database.py
 Check website.py's command prompt and go to the listed IP
+
 ## Documentation
-Please Check System.doc file for Documentation
+****** Please Check CPS706-Assignment/Assignment Files for System.doc file for Documentation ******
+****** Please Check CPS706-Assignment/Assignment Files for Readme.doc file for Documentation ******
+****** Please Check CPS706-Assignment/Assignment Files for Example Demo.PDF file for an Example Working Demo tested on my home laptop ******
