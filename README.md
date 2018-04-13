@@ -1,6 +1,6 @@
-# CPS706 Group 73
+# CPS706 | Group 73
 ### Alisikander Ahmed - 500629092 - alisikander.ahmed@ryerson.ca
-### Port: 40720-40729
+### Ports: 40720-40729
 
 ## Setup
 1. Install Python, (Tested with Python 2.7.12)
