@@ -7,12 +7,12 @@
 2. Install pip (run command 'python get-pip.py' from /CPS706-Assignment)
 3. Install Flask (run command 'pip install Flask')
 
-## Installation
-### Open 3 Command Prompt Windows (execute the following):
-  python website.py
-  python Local_DNS.py
-  python database.py
-#### Check website.py's command prompt and go to the listed IP
+## Running The Application
+### 1. Open 3 Command Prompt Windows (execute the following):
+- python website.py
+- python Local_DNS.py
+- python database.py
+### 2. Check website.py's command prompt and go to the listed IP
 
 ## Documentation
 #### ****** Please Check CPS706-Assignment/Assignment Files for System.doc file for Documentation ******
