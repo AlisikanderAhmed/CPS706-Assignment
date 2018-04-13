@@ -15,7 +15,6 @@ def loadrecords():
     records.append(["video.hiscinema.com", "hiscinema.com", "CNAME"])
     records.append(["hiscinema.com", "NShiscinema.com", "NS"])
     records.append(["NShiscinema.com", config.HIS_CINEMA_IP, "A"])
-    print records
     return records;
 
 records = loadrecords();
@@ -27,11 +26,11 @@ sock.bind((UDP_IP, UDP_PORT))
 try:
     while True:
         data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-        print "received message:", data
+        print "Local DNS Received Message:", data
 
         if data:
-            print "Recieved data from this address: ", addr
-            print "Resolving the DNS query"
+            print "\nRecieved data from this address: ", addr
+            print "Resolving the DNS query now.."
             print "Query Resolved - Sending back to the client"
             record = config.HER_CDN_IP+':'+str(config.HER_CDN_PORT)
             query = record.encode()
