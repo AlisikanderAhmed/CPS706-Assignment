@@ -17,7 +17,7 @@ try:
     while 1:
         conn, addr = server.accept()
         data = conn.recv(BUFFER_SIZE)
-        print "Recieved data: ", data
+        print "\nRecieved data: ", data
         if data:
             file = open('database/' +data+ '.mp4', 'rb')
             packet = file.read(BUFFER_SIZE)
